@@ -47,8 +47,8 @@ pip install -r requirements.txt
 
 ## Group Information
 - Course: DATA1002 - Informatics: Data and Computation
-- Tutorial Section: [TO BE FILLED]
-- Group Number: [TO BE FILLED]
+- Tutorial Session: 024
+- Group Number: 01
 - Group Members: Binh Minh Tran (530414672), Charlie Tran (520628478), Tuan Khai Truong (530148559)
 
 ## Submission Requirements
