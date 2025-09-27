@@ -6,7 +6,7 @@ This project analyzes Premier League football data using three main data sources
 ## Data Sources
 1. **PL_matches**: Historical match data from Premier League seasons 2015-2025
 2. **ClubElo**: Club ELO ratings tracking team strength over time
-3. **Understat**: Advanced football analytics data including xG (expected goals) and other metrics
+3. **Understat**: Advanced football analytics data, including xG (expected goals) and other metrics
 
 ## Project Structure
 ```
@@ -47,9 +47,9 @@ pip install -r requirements.txt
 
 ## Group Information
 - Course: DATA1002 - Informatics: Data and Computation
-- Tutorial Section: [TO BE FILLED]
-- Group Number: [TO BE FILLED]
-- Group Members: [TO BE FILLED]
+- Tutorial Session: 024
+- Group Number: 01
+- Group Members: Binh Minh Tran (530414672), Charlie Tran (520628478), Tuan Khai Truong (530148559)
 
 ## Submission Requirements
 - Report (PDF): Final report meeting all specification requirements
