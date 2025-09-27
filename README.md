@@ -16,15 +16,12 @@ DATA1002/
 │   ├── processed/           # Cleaned and processed data
 │   └── external/            # External data references
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_analysis.ipynb
-│   └── 04_main_report.ipynb
-├── src/                     # Python modules and helper functions
-├── reports/                 # Generated reports and submissions
-├── figures/                 # Saved plots and visualizations
-├── tests/                   # Unit tests for data validation
-├── docs/                    # Documentation and data dictionaries
+│   ├── clean_PL.ipynb
+│   ├── club_elo.ipynb
+│   ├── data_analysis.ipynb
+│   ├── fetch_clubelo_pl.py
+│   ├── xG_premierleague_1525.ipynb
+│   └── data_integration.ipynb
 ├── requirements.txt         # Python dependencies
 └── README.md               # This file
 ```
@@ -52,5 +49,5 @@ pip install -r requirements.txt
 - Group Members: Binh Minh Tran (530414672), Charlie Tran (520628478), Tuan Khai Truong (530148559)
 
 ## Submission Requirements
-- Report (PDF): Final report meeting all specification requirements
+- Report (PDF): Final report meeting all specification requirements (Seperately on Canvas)
 - Code & Data (ZIP): All notebooks, scripts, and datasets (raw + processed)
