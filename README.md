@@ -154,10 +154,6 @@ All processed datasets are included in `data/processed/`. Raw data sources:
 - Extend analysis to other leagues
 - Real-time prediction system implementation
 
-## Contributors
-- **Binh Minh Tran** - Data Analysis and Visualization
-- University of Sydney - DATA1002 Course Project
-
 ## License
 This project is for educational purposes as part of the DATA1002 course at the University of Sydney.
 
@@ -166,7 +162,3 @@ This project is for educational purposes as part of the DATA1002 course at the U
 - Clubelo.com for ELO ratings
 - Understat for xG statistics
 - DATA1002 course instructors for guidance
-
----
-
-For questions or feedback, please contact: [Your Email]
