@@ -27,7 +27,7 @@ DATA1002/
 │       ├── PL_integrated_dataset_10years.csv
 │       ├── PL_matches_10years_cleaned.csv
 │       |── PL_xG_10years_understat.csv
-│       ├── clubelo_premierleague_history.csv
+│       └── clubelo_premierleague_history.csv
 ├── notebooks/
 │   ├── clean_PL.ipynb          # Data cleaning and preprocessing
 │   ├── data_integration.ipynb  # Dataset integration and feature engineering
