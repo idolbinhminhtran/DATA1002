@@ -41,9 +41,9 @@ DATA1002/
 │       ├── PL_outcomes_by_season_2015_2025.csv   # Season-wise outcomes
 │       └── clubelo_premierleague_history.csv     # Cleaned ELO ratings data*
 ├── notebooks/
-│   ├── clean_PL.ipynb          # PL match outcome cleaning and preprocessing*
+│   ├── clean_PL.ipynb          # PL match results cleaning and preprocessing*
 │   ├── data_integration.ipynb  # Dataset integration and feature engineering
-│   ├── data_analysis.ipynb     # PL match outcome analysis and visualizations*
+│   ├── data_analysis.ipynb     # PL match results analysis and visualizations*
 │   ├── club_elo.ipynb          # Club ELO ratings analysis and visualizations*
 │   ├── xG_premierleague_1525.ipynb  # xG data cleaning and processing*
 │   ├── xG_premierleague_1525_analysis.ipynb  # xG data analysis and visualizations*
