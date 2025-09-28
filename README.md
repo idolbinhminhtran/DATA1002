@@ -56,7 +56,6 @@ DATA1002/
 │   ├── elo_bin_dif.png         # ELO difference bins analysis
 │   ├── mean_prediction_success_bar_chart.png    # Prediction success rates
 │   └── prediction_success_home_vs_away.png # Home/Away predictions
-├── docs/                       # Documentation directory
 ├── README.md                   # Project documentation
 └── requirements.txt            # Python dependencies
 ```
