@@ -15,27 +15,47 @@ This project analyzes 10 years of Premier League data (2015-2025) to understand 
 ## Project Structure
 ```
 DATA1002/
-├── README.md
-├── .gitattributes
-├── .gitignore
+├── config/                     # Configuration files
 ├── data/
 │   ├── raw/                    # Original datasets
 │   │   ├── PL_matches/         # Premier League match results (2015-2025)
-│   │   ├── xG/                 # Expected goals data
+│   │   │   ├── 2015-2016.csv
+│   │   │   ├── 2016-2017.csv
+│   │   │   ├── 2017-2018.csv
+│   │   │   ├── 2018-2019.csv
+│   │   │   ├── 2019-2020.csv
+│   │   │   ├── 2020-2021.csv
+│   │   │   ├── 2021-2022.csv
+│   │   │   ├── 2022-2023.csv
+│   │   │   ├── 2023-2024.csv
+│   │   │   └── 2024-2025.csv
+│   │   ├── xG/                 # Expected goals data directory
 │   │   └── Club Elo/           # ELO ratings history
+│   │       └── clubelo_premierleague_history.csv
 │   └── processed/              # Cleaned and integrated datasets
-│       ├── PL_integrated_dataset_10years.csv
-│       ├── PL_matches_10years_cleaned.csv
-│       |── PL_xG_10years_understat.csv
-│       └── clubelo_premierleague_history.csv
+│       ├── PL_integrated_dataset_10years.csv      # Main integrated dataset
+│       ├── PL_matches_10years_cleaned.csv         # Cleaned match data
+│       ├── PL_xG_10years_understat.csv           # xG data from Understat
+│       ├── PL_xG_trends_by_season_2015_2025.csv  # xG trends analysis
+│       ├── PL_outcomes_by_season_2015_2025.csv   # Season-wise outcomes
+│       └── clubelo_premierleague_history.csv     # Processed ELO data
 ├── notebooks/
 │   ├── clean_PL.ipynb          # Data cleaning and preprocessing
 │   ├── data_integration.ipynb  # Dataset integration and feature engineering
 │   ├── data_analysis.ipynb     # Main analysis and visualizations
-│   └── xG_premierleague_1525.ipynb  # xG data collection
+│   ├── club_elo.ipynb          # ELO ratings analysis
+│   ├── xG_premierleague_1525.ipynb  # xG data collection and processing
+│   └── fetch_clubelo_pl.py     # Script to fetch Club ELO data
 ├── figures/                    # Generated visualizations
-├── report/                    # Analysis reports
-|   ├── DATA1002_Assignment_Stage1.pdf
+│   ├── summary.png             # Summary dashboard
+│   ├── output.png              # Main results visualization
+│   ├── xG_vs_output.png        # xG analysis results
+│   ├── elo_distribution.png    # ELO ratings distribution
+│   ├── elo_bin_dif.png         # ELO difference bins analysis
+│   ├── mean_prediction_success_pie.png    # Prediction success rates
+│   └── prediction_success_home_vs_away.png # Home/Away predictions
+├── docs/                       # Documentation directory
+├── README.md                   # Project documentation
 └── requirements.txt            # Python dependencies
 ```
 
@@ -114,17 +134,36 @@ jupyter notebook notebooks/data_analysis.ipynb
 - Cleans raw Premier League match data
 - Handles missing values and inconsistencies
 - Standardizes team names and date formats
+- Outputs: `PL_matches_10years_cleaned.csv`
 
 #### `data_integration.ipynb`
 - Merges match results with ELO ratings and xG data
 - Creates derived features for analysis
-- Exports integrated dataset
+- Integrates multiple data sources into unified dataset
+- Outputs: `PL_integrated_dataset_10years.csv`
 
 #### `data_analysis.ipynb`
 - Main analysis notebook with all visualizations
 - Binary win/lose prediction analysis
 - Correlation analysis between pre-match factors and outcomes
 - Professional visualization dashboard
+- Generates all figures in `figures/` directory
+
+#### `club_elo.ipynb`
+- Analyzes ELO ratings distribution and trends
+- Visualizes team strength over time
+- Creates ELO-based predictions
+
+#### `xG_premierleague_1525.ipynb`
+- Collects and processes xG data from Understat
+- Analyzes xG trends across seasons
+- Creates xG-based match predictions
+- Outputs: `PL_xG_10years_understat.csv`, `PL_xG_trends_by_season_2015_2025.csv`
+
+#### `fetch_clubelo_pl.py`
+- Python script to fetch latest Club ELO ratings
+- Automates data collection from clubelo.com
+- Can be run independently for data updates
 
 ## Results & Visualizations
 
@@ -158,6 +197,7 @@ All processed datasets are included in `data/processed/`. Raw data sources:
 - Develop ensemble prediction models
 - Extend analysis to other leagues
 - Real-time prediction system implementation
+
 
 ## License
 This project is for educational purposes as part of the DATA1002 course at the University of Sydney.
