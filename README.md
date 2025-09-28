@@ -15,6 +15,9 @@ This project analyzes 10 years of Premier League data (2015-2025) to understand 
 ## Project Structure
 ```
 DATA1002/
+├── README.md
+├── .gitattributes
+├── .gitignore
 ├── data/
 │   ├── raw/                    # Original datasets
 │   │   ├── PL_matches/         # Premier League match results (2015-2025)
@@ -30,7 +33,8 @@ DATA1002/
 │   ├── data_analysis.ipynb     # Main analysis and visualizations
 │   └── xG_premierleague_1525.ipynb  # xG data collection
 ├── figures/                    # Generated visualizations
-├── reports/                    # Analysis reports
+├── report/                    # Analysis reports
+|   ├── DATA1002_Assignment_Stage1.pdf
 └── requirements.txt            # Python dependencies
 ```
 
