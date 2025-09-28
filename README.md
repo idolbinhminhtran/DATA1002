@@ -29,30 +29,32 @@ DATA1002/
 │   │   │   ├── 2022-2023.csv
 │   │   │   ├── 2023-2024.csv
 │   │   │   └── 2024-2025.csv
-│   │   ├── xG/                 # Expected goals data directory
+│   │   ├── xG/                 # Expected goals data (2015-2025)
+|   |   |   └── xG_premierleague.csv 
 │   │   └── Club Elo/           # ELO ratings history
 │   │       └── clubelo_premierleague_history.csv
 │   └── processed/              # Cleaned and integrated datasets
-│       ├── PL_integrated_dataset_10years.csv      # Main integrated dataset
-│       ├── PL_matches_10years_cleaned.csv         # Cleaned match data
-│       ├── PL_xG_10years_understat.csv           # xG data from Understat
+│       ├── PL_integrated_dataset_10years.csv     # Main integrated dataset
+│       ├── PL_matches_10years_cleaned.csv        # Cleaned match data*
+│       ├── PL_xG_10years_understat.csv           # Cleaned xG data from Understat*
 │       ├── PL_xG_trends_by_season_2015_2025.csv  # xG trends analysis
 │       ├── PL_outcomes_by_season_2015_2025.csv   # Season-wise outcomes
-│       └── clubelo_premierleague_history.csv     # Processed ELO data
+│       └── clubelo_premierleague_history.csv     # Cleaned ELO ratings data*
 ├── notebooks/
-│   ├── clean_PL.ipynb          # Data cleaning and preprocessing
+│   ├── clean_PL.ipynb          # PL match outcome cleaning and preprocessing*
 │   ├── data_integration.ipynb  # Dataset integration and feature engineering
-│   ├── data_analysis.ipynb     # Main analysis and visualizations
-│   ├── club_elo.ipynb          # ELO ratings analysis
-│   ├── xG_premierleague_1525.ipynb  # xG data collection and processing
-│   └── fetch_clubelo_pl.py     # Script to fetch Club ELO data
+│   ├── data_analysis.ipynb     # PL match outcome analysis and visualizations*
+│   ├── club_elo.ipynb          # Club ELO ratings analysis and visualizations*
+│   ├── xG_premierleague_1525.ipynb  # xG data cleaning and processing*
+│   ├── xG_premierleague_1525_analysis.ipynb  # xG data analysis and visualizations*
+│   └── fetch_clubelo_pl.py     # Club ELO ratings cleaning and preprocessing*
 ├── figures/                    # Generated visualizations
 │   ├── summary.png             # Summary dashboard
 │   ├── output.png              # Main results visualization
 │   ├── xG_vs_output.png        # xG analysis results
 │   ├── elo_distribution.png    # ELO ratings distribution
 │   ├── elo_bin_dif.png         # ELO difference bins analysis
-│   ├── mean_prediction_success_pie.png    # Prediction success rates
+│   ├── mean_prediction_success_bar_chart.png    # Prediction success rates
 │   └── prediction_success_home_vs_away.png # Home/Away predictions
 ├── docs/                       # Documentation directory
 ├── README.md                   # Project documentation
